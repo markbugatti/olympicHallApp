@@ -1,0 +1,18 @@
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    /*font-family: ;*/
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+
+#callbacksDiv p{
+    font-size:1.2em;
+}
+#callbacksDiv h4{
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}

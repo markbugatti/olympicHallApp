@@ -1,0 +1,20 @@
+{
+  "name": "olympichall",
+  "description": "Olympic-hall landing page",
+  "main": "app\\index.html",
+  "authors": [
+    "Mark"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullpage.js": "^3.0.4"
+  }
+}
