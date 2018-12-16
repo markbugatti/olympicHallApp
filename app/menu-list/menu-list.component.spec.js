@@ -1,17 +1,17 @@
 'use strict';
 
-describe('pageList', function() {
+describe('menuList', function() {
 
     // Load the module that contains the `phoneList` component before each test
-    beforeEach(module('pageList'));
+    beforeEach(module('menuList'));
 
     // Test the controller
-    describe('pageListController', function() {
+    describe('menuListController', function() {
 
-        it('should create a `pages` model with 4 pages', inject(function($componentController) {
-            var ctrl = $componentController('pageList');
+        it('should create a `menus` model with 4 menus', inject(function($componentController) {
+            var ctrl = $componentController('manuList');
 
-            expect(ctrl.pgs.length).toBe(3);
+            expect(ctrl.menus.length).toBe(4);
         }));
 
     });

@@ -7,6 +7,7 @@ module.exports = function(config) {
     files: [
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
+        'bower_components/fullpage.js/src/fullpage.js',
       '**/*.module.js',
       '*!(.module|.spec).js',
       '!(bower_components)/**/*!(.module|.spec).js',
@@ -17,7 +18,7 @@ module.exports = function(config) {
 
     frameworks: ['jasmine'],
 
-    browsers: ['Chrome', 'Firefox'],
+    browsers: ['Chrome'],
 
     plugins: [
       'karma-chrome-launcher',

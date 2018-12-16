@@ -1,9 +1,10 @@
 'use strict';
 
 angular.
-    module('menuList', []).
+    module('menuList').
         component('menuList', {
             templateUrl: 'menu-list/menu-list.template.html',
+            controllerAs: '$menuListCtrl',
             controller: function MenuListController() {
                 this.menus = [
                     {
@@ -24,4 +25,4 @@ angular.
                     }
                 ]
             }
-})
+});

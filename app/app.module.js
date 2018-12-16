@@ -1,5 +1,9 @@
 'use strict';
 
 angular.module('olympicHallApp', [
-   'menuList'
+    'BrowserModule',
+    'AppRoutingModule',
+    'AngularFullpageModule',
+    'menuList',
+    'pageList'
 ]);

@@ -1,20 +1,21 @@
 {
   "name": "olympichall",
   "description": "Olympic-hall landing page",
-  "main": "app\\index.html",
   "authors": [
     "Mark"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/markbugatti/olympicHallApp",
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components",
-    "test",
-    "tests"
+    "bower_components"
   ],
   "dependencies": {
-    "fullpage.js": "^3.0.4"
+    "fullpage.js": "^3.0.4",
+    "angular": "^1.7.5",
+    "angular-mocks": "^1.7.5",
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1"
   }
 }

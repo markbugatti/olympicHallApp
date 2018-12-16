@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<div fullpage id="fullpage" class="fullpage-wrapper" >
+    <div class="section"  ng-repeat= "page in $pageListCtrl.pages" id="{{page.id}}">
+        <h1>{{page.content}}</h1>
+    </div>
+    <!--<div class="section" id="section1">-->
+        <!--<div class="slide active"><h1>Simple Demo</h1></div>-->
+        <!--<div class="slide"><h1>Only text</h1></div>-->
+        <!--<div class="slide"><h1>And text</h1></div>-->
+        <!--<div class="slide"><h1>And more text</h1></div>-->
+    <!--</div>-->
+</div>
+</div>
+
+<!--<div fullpage id="fullpage">-->
+    <!--<div ng-repeat= "page in pageListCtrl.pages">-->
+        <!--<div class="section"  id="{{page.id}}">-->
+            <!--<h1>{{page.content}}</h1>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
