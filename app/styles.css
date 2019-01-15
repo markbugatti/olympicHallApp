@@ -1,18 +1,49 @@
-h1,h2,h3,h4,h5,h6 {
-    font-weight: normal;
-    /*font-family: ;*/
-    font-size: 100%;
-    margin:0;
-    padding:0;
-    color:#444;
+.fp-enabled body {
+     margin-top: 48px;
 }
 
-#callbacksDiv p{
-    font-size:1.2em;
+h1 {
+    font-size: 5em;
+    /*font-family: arial,helvetica;*/
+    color: #7d2898;
+    margin:0;
+    padding:0;
 }
-#callbacksDiv h4{
-    font-size: 1.4em;
-    font-weight: bold;
-    color: white;
-    text-decoration: underline;
+
+.section {
+    padding-top: 10px;
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+#section0{
+    background-image: url(imgs/ch_illus.jpg);
+}
+
+#section0 h1{
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+
+/*.fixed-top {*/
+    /*padding-top: 10px;*/
+/*}*/
+
+/*div.fixed-top, div.container {*/
+
+/*}*/
+
+/*@media screen and (min-width: 601px) {*/
+    /*div.fixed-top, div.container {*/
+        /*font-size: 1.4rem;*/
+    /*}*/
+/*}*/
+
+/*@media screen and (max-width: 600px) {*/
+    /*div.example {*/
+        /*font-size: 1.2rem;*/
+    /*}*/
+/*}*/

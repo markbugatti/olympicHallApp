@@ -7,7 +7,7 @@
 
     <div class="collapse navbar-collapse" id="Menu">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item" ng-repeat="menu in $menuListCtrl.menus">
+            <li class="nav-item" ng-repeat="menu in $menuListCtrl.menus" id="{{menu.id}}">
                 <a class="nav-link" href="{{menu.href}}">{{menu.label}}</a>
             </li>
         </ul>

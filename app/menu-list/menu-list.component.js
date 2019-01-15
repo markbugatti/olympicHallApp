@@ -9,19 +9,23 @@ angular.
                 this.menus = [
                     {
                         href: '#firstPage',
-                        label: 'Home'
+                        label: 'Home',
+                        id: 'id1'
                     },
                     {
                         href: '#secondPage',
-                        label: '2ndPage'
+                        label: '2ndPage',
+                        id: 'id2'
                     },
                     {
                         href: '#3rdPage',
-                        label: '3rdPage'
+                        label: '3rdPage',
+                        id: 'id3'
                     },
                     {
                         href: '#4thPage',
-                        label: '4thPage'
+                        label: '4thPage',
+                        id: 'id4'
                     }
                 ]
             }

@@ -5,5 +5,6 @@ var myFullpage = new fullpage('#fullpage', {
     // menu: '#menu',
     navigation: true,
     navigationPosition: 'right',
+    recordHistory: false
     // navigationTooltips: ['First page', 'Second page', 'Third and last page']
 });
