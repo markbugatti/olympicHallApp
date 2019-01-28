@@ -9,12 +9,12 @@ angular.
                 this.menus = [
                     {
                         href: '#firstPage',
-                        label: 'Home',
+                        label: 'Головна',
                         id: 'id1'
                     },
                     {
                         href: '#secondPage',
-                        label: '2ndPage',
+                        label: 'Послуги',
                         id: 'id2'
                     },
                     {
@@ -25,6 +25,11 @@ angular.
                     {
                         href: '#4thPage',
                         label: '4thPage',
+                        id: 'id4'
+                    },
+                    {
+                        href: '#5thPage',
+                        label: '5thPage',
                         id: 'id4'
                     }
                 ]

@@ -2,5 +2,5 @@
 
 angular.module('olympicHallApp', [
     'menuList',
-    'pageList'
+    'serviceList'
 ]);
