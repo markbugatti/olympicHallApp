@@ -1,18 +1,161 @@
-h1,h2,h3,h4,h5,h6 {
-    font-weight: normal;
-    /*font-family: ;*/
-    font-size: 100%;
-    margin:0;
-    padding:0;
-    color:#444;
+.fp-enabled body, html.fp-enabled {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+    background: url("assets/Desktop/back.png") center;
 }
 
-#callbacksDiv p{
-    font-size:1.2em;
+.navbar {
+    /*height: ;*/
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
-#callbacksDiv h4{
-    font-size: 1.4em;
-    font-weight: bold;
-    color: white;
-    text-decoration: underline;
+
+@font-face {
+    font-family: "PlumbBolt";
+    src: url('fonts/PlumbBoldC.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: "PlumbMedium";
+    src: url('fonts/PlumbMediumC.ttf') format("truetype");
+}
+/* default less than 576*/
+h1 {
+    font-family: "My Custom Font";
+    font-size: 2em;
+    /*font-family: arial,helvetica;*/
+    /*color: #7d2898;*/
+    /*color: #ef6d2d;*/
+    color: #e0e0e0;
+    margin: 0;
+    /*padding-top: 56px;*/
+}
+
+h2 {
+    font-family: PlumbMedium;
+    /*color: #808080;*/
+    color: #ffffff;
+}
+
+#section1 {
+    /*background-image: url(imgs/ch_illus.jpg);*/
+    /*background-image: url(imgs/img3.jpg);*/
+    /*background-color: #2a2730;*/
+}
+
+#section1 h1 {
+    /*top: 10%;*/
+    /*transform: translateY(-10%);*/
+    font-size: 1.6em;
+    position: relative;
+}
+
+li {
+    margin: 0.5em;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+
+.col {
+    padding: 0 5px;
+}
+
+
+.content-row {
+    margin: 2em 0;
+
+}
+#nav-tel {
+    background-image: url("imgs/icons/call32.png");
+    background-size: 25px;
+}
+
+#nav-mail {
+    background-image: url("imgs/icons/mail32.png");
+    background-size: 25px;
+}
+
+a.nav-contacts {
+    color: black !important;
+}
+
+.glr-slide {
+    background-size:  auto 100%;
+    background: #f2f2f2 no-repeat center;
+}
+
+#glr-slide1 {
+    background-image: url("imgs/gallery/002.jpg");
+}
+
+#glr-slide2 {
+    background-image: url("imgs/gallery/005.jpg");
+}
+
+.nav-contacts {
+    /*display: block;*/
+
+    background: no-repeat left;
+    padding-left: 40px;
+    text-indent: -88888px;
+    width: 0px;
+}
+
+/*no contacts in header before this size*/
+@media screen and (max-width: 374px) {
+    .nav-contacts {
+        display: none;
+    }
+}
+
+/*show gallery arrows after this size*/
+@media screen and (max-width: 1000px) {
+    .fp-controlArrow {
+        display: none;
+    }
+}
+
+/*no contacts in btn aft*/
+@media screen and (min-width: 576px) {
+
+}
+/*button collapse breakpoint,
+disable contacts in menu btn after this size */
+@media screen and (min-width: 768px) {
+    .nav-btn-contacts {
+        display: none;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/*font breakpoints*/
+@media screen and (min-width: 1090px) {
+    /*appear texted contacts*/
+    .nav-contacts {
+        text-indent: unset;
+        width: auto;
+    }
+    /*font breakpoint*/
+    #section0 h1 {
+        font-size: 2em
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 2.5em
+    }
+}
+
+@media screen and (max-width: 760px) and (max-height: 400px)
+{
+
 }

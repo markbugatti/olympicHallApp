@@ -1,12 +1,35 @@
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+    <div class="container m-0 w-75 flex-wrap justify-content-between align-content-center">
+        <div class="row">
+            <div class="col">
+                <a class="navbar-brand m-0" href="#">Універсальний Зал</a>
+            </div>
+
+            <div class="col">
+                <a class="navbar-text nav-contacts" href="tel:+380960454591" id="nav-tel">(096)045-45-91</a>
+            </div>
+
+            <div class="col">
+                <a class="navbar-text nav-contacts" href="mailto:olympic.hall120@gmail.com" id="nav-mail">olympic.hall120@gmail.com</a>
+            </div>
+
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Menu"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="collapse navbar-collapse m-0" id="Menu">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item" ng-repeat="menu in $ctrl.menus">
+            <div class="nav-item nav-btn-contacts" style="min-width: 141px">
+                <a class="navbar-text" style="color: black" href="tel:+380960454591">(096)045-45-91</a>
+            </div>
+
+            <div class="nav-item nav-btn-contacts" style="min-width: 200px">
+                <a class="navbar-text" style="color: black" href="mailto:olympic.hall120@gmail.com">olympic.hall120@gmail.com</a>
+            </div>
+            <li class="nav-item" ng-repeat="menu in $menuListCtrl.menus">
                 <a class="nav-link" href="{{menu.href}}">{{menu.label}}</a>
             </li>
         </ul>
