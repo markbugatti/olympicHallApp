@@ -19,7 +19,7 @@ angular.
                     },
                     {
                         href: '#3rdPage',
-                        label: '3rdPage',
+                        label: 'Галерея',
                         id: 'id3'
                     },
                     {

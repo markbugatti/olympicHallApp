@@ -14,9 +14,9 @@ var myFullpage = new fullpage('#fullpage', {
     recordHistory: false,
 
     // design
-    paddingTop: '56px',
+    paddingTop: '44px',
     controlArrows: true,
-    autoScrolling: false,
+    // autoScrolling: false,
     // navigationTooltips: ['First page', 'Second page', 'Third and last page']
     // Callbacks
     afterSlideLoad: gallerySize(),
@@ -34,10 +34,10 @@ var myFullpage = new fullpage('#fullpage', {
 // gallery rotation
 function gallerySize() {
     if($(window).width()>$(window).height()) {
-        $('.glr-slide').css({"background-size": "auto 145%"})
+        $('.glr-slide').css({"background-size": "auto 100%"})
     }
     else {
-        $('.glr-slide').css({"background-size": "145% auto"})
+        $('.glr-slide').css({"background-size": "100% auto"})
     }
 };
 

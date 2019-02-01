@@ -2,33 +2,42 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-size: cover;
+    background: url("assets/Desktop/back.png") center;
 }
 
-/*.fp-tableCell {*/
-/*vertical-align: top;*/
-/*}*/
-
-#fullpage {
-    /*background-color: #2a2730;*/
+.navbar {
+    /*height: ;*/
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 
-.container-fluid {
-    /*margin-top: 56px;*/
+@font-face {
+    font-family: "PlumbBolt";
+    src: url('fonts/PlumbBoldC.ttf') format("truetype");
 }
 
+@font-face {
+    font-family: "PlumbMedium";
+    src: url('fonts/PlumbMediumC.ttf') format("truetype");
+}
 /* default less than 576*/
 h1 {
+    font-family: "My Custom Font";
     font-size: 2em;
     /*font-family: arial,helvetica;*/
     /*color: #7d2898;*/
-    color: #ef6d2d;
+    /*color: #ef6d2d;*/
+    color: #e0e0e0;
     margin: 0;
     /*padding-top: 56px;*/
 }
 
 h2 {
-    color: #808080;
+    font-family: PlumbMedium;
+    /*color: #808080;*/
+    color: #ffffff;
 }
 
 #section1 {
@@ -60,13 +69,16 @@ ul {
 
 .content-row {
     margin: 2em 0;
+
 }
 #nav-tel {
     background-image: url("imgs/icons/call32.png");
+    background-size: 25px;
 }
 
 #nav-mail {
     background-image: url("imgs/icons/mail32.png");
+    background-size: 25px;
 }
 
 a.nav-contacts {
@@ -88,7 +100,7 @@ a.nav-contacts {
 
 .nav-contacts {
     /*display: block;*/
-    background-size: 32px 32px;
+
     background: no-repeat left;
     padding-left: 40px;
     text-indent: -88888px;
@@ -125,7 +137,7 @@ disable contacts in menu btn after this size */
 }
 
 /*font breakpoints*/
-@media screen and (min-width: 996px) {
+@media screen and (min-width: 1090px) {
     /*appear texted contacts*/
     .nav-contacts {
         text-indent: unset;
@@ -141,4 +153,9 @@ disable contacts in menu btn after this size */
     h1 {
         font-size: 2.5em
     }
+}
+
+@media screen and (max-width: 760px) and (max-height: 400px)
+{
+
 }
