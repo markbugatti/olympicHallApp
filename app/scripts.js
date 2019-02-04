@@ -5,7 +5,7 @@ var myFullpage = new fullpage('#fullpage', {
     // menu: '#menu',
     slidesNavigation: true,
     responsiveHeight: 330,
-    // scrollingSpeed: 300,
+    // scrollingSpeed: 2000,
     controlArrows: false,
     // scrolling
     css3: false,
@@ -17,23 +17,62 @@ var myFullpage = new fullpage('#fullpage', {
     paddingTop: '44px',
     controlArrows: true,
     // autoScrolling: false,
+    // fitToSection: false,
     // navigationTooltips: ['First page', 'Second page', 'Third and last page']
     // Callbacks
+    afterLoad: function(origin, destination, direction) {
+        //change color
+        // adjustNav($(destination.item).css('background-color'));
+    },
     afterSlideLoad: gallerySize(),
     afterResize: function () {
         gallerySize();
-        },
+    },
     onLeave: function (origin, destination, direction) {
-        fullpage_api.setScrollingSpeed(700);
+        fullpage_api.setScrollingSpeed(1200);
+        adjustNav($(destination.item).css('background-color'));
     },
     onSlideLeave: function (section, origin, destination, direction) {
         fullpage_api.setScrollingSpeed(200);
     }
 });
 
+function adjustNav(color) {
+    var rgb;
+    rgb = color.replace(/[^\d,]/g, '').split(',');
+    color = 'rgb(' + rgb[0] + ', ' + rgb[1] + ', ' + rgb[2] + ')';
+
+    $('.navbar').css({"background-color": color});
+
+    switch (color.toString()) {
+        case "rgb(42, 99, 99)":
+            // light font color
+            adjustCss('navbar-light', 'navbar-dark', 1);
+            break;
+        case "rgb(242, 242, 242)":
+            // dark font color
+            adjustCss('navbar-dark', 'navbar-light', 0);
+            break;
+        default:
+            break;
+    }
+
+    function adjustCss(nav_rem, nav_add, invert) {
+        // setTimeout(function () {
+            $('.navbar').removeClass(nav_rem);
+            $('.navbar').addClass(nav_add);
+            // }, 700);
+        // $('.navbar').addClass(nav_add);
+        $('.nav-contacts').css({'filter': 'invert(' + invert + ')'});
+        $('.nav-contacts').css({'-webkit-filter': 'invert(' + invert + ')'});
+        $('.nav-contacts').css({'-ms-filter': 'invert(' + invert + ')'});
+    }
+
+}
+
 // gallery rotation
 function gallerySize() {
-    if($(window).width()>$(window).height()) {
+    if ($(window).width() > $(window).height()) {
         $('.glr-slide').css({"background-size": "auto 100%"})
     }
     else {

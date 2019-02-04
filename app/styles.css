@@ -3,14 +3,77 @@
     padding: 0;
     overflow: hidden;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /*background-color: #2A6363;*/
+}
+
+.section {
+    text-align:center;
+    background-color: RGBA(42, 99, 99, 0);
+}
+
+#section1, #section2 {
+    /*background-image: url(imgs/ch_illus.jpg);*/
+    /*background-image: url(imgs/img3.jpg);*/
+    background-color: RGBA(42, 99, 99, 0);
+    /*#2A6363;*/
+}
+
+#section3 {
+    background-color: RGBA(242, 242, 242, 0);
+    /*#f2f2f2;*/
+}
+
+body {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    background: url("assets/Desktop/кафедра_градиент_2402_1350.png") no-repeat fixed center bottom;
     background-size: cover;
-    background: url("assets/Desktop/back.png") center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+
+/*nav color change transition*/
+a, span, .navbar
+{
+    transition: all 300ms linear;
+    transition-delay: 1s;
 }
 
 .navbar {
-    /*height: ;*/
+    background-color: #2A6363;
+}
+
+
+
+#first-container {
+    width: 100%;
+    /*padding: 0 4px;*/
+}
+
+.navbar {
     padding-top: 2px;
     padding-bottom: 2px;
+}
+
+.nav-link {
+    padding: 0 !important;
+}
+
+a.nav-link {
+    padding: 0 !important;
 }
 
 @font-face {
@@ -24,7 +87,7 @@
 }
 /* default less than 576*/
 h1 {
-    font-family: "My Custom Font";
+    font-family: "PlumbMedium";
     font-size: 2em;
     /*font-family: arial,helvetica;*/
     /*color: #7d2898;*/
@@ -40,11 +103,7 @@ h2 {
     color: #ffffff;
 }
 
-#section1 {
-    /*background-image: url(imgs/ch_illus.jpg);*/
-    /*background-image: url(imgs/img3.jpg);*/
-    /*background-color: #2a2730;*/
-}
+
 
 #section1 h1 {
     /*top: 10%;*/
@@ -71,6 +130,18 @@ ul {
     margin: 2em 0;
 
 }
+
+.nav-contacts {
+    /*display: block;*/
+    background: no-repeat left;
+    padding-left: 40px;
+    text-indent: -88888px;
+    width: 0px;
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    -ms-filter: invert(1);
+}
+
 #nav-tel {
     background-image: url("imgs/icons/call32.png");
     background-size: 25px;
@@ -91,21 +162,14 @@ a.nav-contacts {
 }
 
 #glr-slide1 {
-    background-image: url("imgs/gallery/002.jpg");
+    /*background-image: url("imgs/gallery/002.jpg");*/
 }
 
 #glr-slide2 {
-    background-image: url("imgs/gallery/005.jpg");
+    /*background-image: url("imgs/gallery/005.jpg");*/
 }
 
-.nav-contacts {
-    /*display: block;*/
 
-    background: no-repeat left;
-    padding-left: 40px;
-    text-indent: -88888px;
-    width: 0px;
-}
 
 /*no contacts in header before this size*/
 @media screen and (max-width: 374px) {
@@ -133,6 +197,9 @@ disable contacts in menu btn after this size */
     }
     h1 {
         font-size: 2em;
+    }
+    #first-container {
+        width: 40em;
     }
 }
 
