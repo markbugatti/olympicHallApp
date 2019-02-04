@@ -79,11 +79,3 @@ function gallerySize() {
         $('.glr-slide').css({"background-size": "100% auto"})
     }
 };
-
-// fullscreen photo
-// push mouse
-// get element by id
-// fullscreen it
-$(window).click(function (e) {
-    console.dir(e);
-})

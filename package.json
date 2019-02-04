@@ -32,7 +32,7 @@
     "postinstall": "npm run copy-libs",
     "update-deps": "npm update",
     "postupdate-deps": "npm run copy-libs",
-    "copy-libs": "cpx \"node_modules/{angular,angular-mocks,bootstrap/dist,jquery/dist,fullpage.js/dist,popper.js/dist/umd}/**/*\" app/lib -C",
+    "copy-libs": "cpx \"node_modules/{bootstrap/dist,jquery/dist,fullpage.js/dist}/**/*\" app/lib -C",
     "prestart": "",
     "start": "http-server ./app -a localhost -p 8000 -c-1",
     "wifi": "http-server ./app -a 192.168.1.47 -p 8000 -c-1",
