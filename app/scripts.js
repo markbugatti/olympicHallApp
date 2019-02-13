@@ -5,11 +5,11 @@ var myFullpage = new fullpage('#fullpage', {
     // menu: '#menu',
     slidesNavigation: true,
     responsiveHeight: 330,
-    // scrollingSpeed: 2000,
+    // scrollingSpeed: 1000,
     controlArrows: false,
     // scrolling
-    css3: false,
-    touchSensitivity: 18,
+    // css3: false,
+    // touchSensitivity: 18,
     // accessibility
     recordHistory: false,
 
@@ -20,6 +20,7 @@ var myFullpage = new fullpage('#fullpage', {
     // fitToSection: false,
     // navigationTooltips: ['First page', 'Second page', 'Third and last page']
     // Callbacks
+
     afterLoad: function(origin, destination, direction) {
         //change color
         // adjustNav($(destination.item).css('background-color'));
@@ -79,3 +80,8 @@ function gallerySize() {
         $('.glr-slide').css({"background-size": "100% auto"})
     }
 };
+
+// enable menu after page load to avoid non stylized text
+$(window).on('load', function() {
+    $('.navbar').css({"visibility": "visible"});
+})

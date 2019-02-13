@@ -3,13 +3,5 @@ app/lib
 app/bower_components
 node_modules
 .idea/
-=======
-app/bower_components
-app/lib
-node_modules
-.idea/
-
-app/service-list
-
-.docx
->>>>>>> secondPage
+stuff/
+*.zip
