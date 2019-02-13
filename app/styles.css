@@ -264,23 +264,10 @@ li {
     .fp-controlArrow {
         display: block
     }
-    /*text*/
-    #section1 h1 {
-        font-size: 3em
-    }
-    #section1 h2 {
-        font-size: 2em;
-    }
-
-    #first-container {
-        width: 75%;
-    }
-
 }
 
 @media screen and (min-width: 1200px) {
     h1 {
         font-size: 2.5em
     }
-
 }
