@@ -14,7 +14,7 @@ var myFullpage = new fullpage('#fullpage', {
     recordHistory: false,
 
     // design
-    paddingTop: '44px',
+    paddingTop: '42px',
     controlArrows: true,
     // autoScrolling: false,
     // fitToSection: false,

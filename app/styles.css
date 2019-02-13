@@ -9,12 +9,12 @@
     src: url('fonts/PlumbMediumC.ttf') format("truetype")
 }
 
-/*.fp-enabled body, html.fp-enabled {*/
-    /*margin: 0;*/
-    /*padding: 0;*/
-    /*overflow: hidden;*/
-    /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0)*/
-/*}*/
+.fp-enabled body, html.fp-enabled {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
 /*-----------------*/
 
 /*choose background*/
@@ -41,13 +41,13 @@
 body {
     /*background: url("imgs/background/gradient.png");*/
     position: fixed;
-    /*left: 0;*/
-    /*top: 0;*/
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     z-index: -10;
     background-size: 100% auto;
-    /*background-size: cover;*/
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -226,9 +226,9 @@ li {
     .nav-btn-contacts {
         display: none
     }
-    div.fp-tableCell {
-        /*vertical-align: top;*/
-    }
+    /*div.fp-tableCell {*/
+        /*!*vertical-align: top;*!*/
+    /*}*/
     #first-container  {
         vertical-align: top;
         height: 70%;
