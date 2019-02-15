@@ -8,13 +8,6 @@
     font-family: "PlumbMedium";
     src: url('fonts/PlumbMediumC.ttf') format("truetype")
 }
-
-/*.fp-enabled body, html.fp-enabled {*/
-    /*margin: 0;*/
-    /*padding: 0;*/
-    /*overflow: hidden;*/
-    /*-webkit-tap-highlight-color: rgba(0, 0, 0, 0)*/
-/*}*/
 /*-----------------*/
 
 /*choose background*/
@@ -40,14 +33,14 @@
 
 body {
     /*background: url("imgs/background/gradient.png");*/
-    position: fixed;
-    /*left: 0;*/
-    /*top: 0;*/
+    /*position: fixed;*/
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     z-index: -10;
     background-size: 100% auto;
-    /*background-size: cover;*/
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -226,9 +219,9 @@ li {
     .nav-btn-contacts {
         display: none
     }
-    div.fp-tableCell {
-        /*vertical-align: top;*/
-    }
+    /*div.fp-tableCell {*/
+        /*!*vertical-align: top;*!*/
+    /*}*/
     #first-container  {
         vertical-align: top;
         height: 70%;
@@ -264,23 +257,10 @@ li {
     .fp-controlArrow {
         display: block
     }
-    /*text*/
-    #section1 h1 {
-        font-size: 3em
-    }
-    #section1 h2 {
-        font-size: 2em;
-    }
-
-    #first-container {
-        width: 75%;
-    }
-
 }
 
 @media screen and (min-width: 1200px) {
     h1 {
         font-size: 2.5em
     }
-
 }

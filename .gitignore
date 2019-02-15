@@ -2,5 +2,7 @@ app/lib
 app/bower_components
 node_modules
 .idea/
-*.min.js
+stuff/
+*.zip
 *.min.css
+*.min.js
