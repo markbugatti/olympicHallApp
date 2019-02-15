@@ -4,7 +4,7 @@ var myFullpage = new fullpage('#fullpage', {
     anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage'],
     // menu: '#menu',
     slidesNavigation: true,
-    responsiveHeight: 330,
+    // responsiveHeight: 330,
     // scrollingSpeed: 1000,
     controlArrows: false,
     // scrolling
@@ -14,7 +14,7 @@ var myFullpage = new fullpage('#fullpage', {
     recordHistory: false,
 
     // design
-    paddingTop: '42px',
+    paddingTop: '44px',
     controlArrows: true,
     // autoScrolling: false,
     // fitToSection: false,

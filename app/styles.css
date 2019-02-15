@@ -8,13 +8,6 @@
     font-family: "PlumbMedium";
     src: url('fonts/PlumbMediumC.ttf') format("truetype")
 }
-
-.fp-enabled body, html.fp-enabled {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
-}
 /*-----------------*/
 
 /*choose background*/
@@ -40,7 +33,7 @@
 
 body {
     /*background: url("imgs/background/gradient.png");*/
-    position: fixed;
+    /*position: fixed;*/
     left: 0;
     top: 0;
     width: 100%;
