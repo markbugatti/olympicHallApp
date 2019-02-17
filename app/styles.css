@@ -1,10 +1,5 @@
 /*fonts declaration*/
 @font-face {
-    font-family: "PlumbBolt";
-    src: url('fonts/PlumbBoldC.ttf') format("truetype")
-}
-
-@font-face {
     font-family: "PlumbMedium";
     src: url('fonts/PlumbMediumC.ttf') format("truetype")
 }
@@ -28,12 +23,10 @@
         background: url("imgs/background/table_desktop.png");
     }
 }
+/*-------------------------------------*/
 
-
-
+/*Adjust properly background attachment*/
 body {
-    /*background: url("imgs/background/gradient.png");*/
-    /*position: fixed;*/
     left: 0;
     top: 0;
     width: 100%;
@@ -47,17 +40,10 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center bottom;
-    /*background: radial-gradient(circle, rgba(0,68,63,1) 0%, rgba(43,83,83,1) 100%);*/
 }
+/*-----------------*/
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-    font-size: 100%;
-    margin: 0;
-    padding: 0;
-    color: #444
-}
-
+/*navbar adjustment*/
 a, span, .navbar {
     transition: all 300ms linear;
     /*transition-delay: 1s;*/
@@ -97,14 +83,19 @@ a.nav-contacts {
 a.nav-link {
     padding: 0 !important
 }
+/*-----------*/
 
+/*setup font*/
 h1, h2 {
     font-family: PlumbMedium;
     color: #fff;
 }
 /*----------------------------*/
 
-/*Fullpage sections adjustment*/
+/*Fullpage sections. setup background for navbar color changing*/
+.fp-tableCell {
+    height: 100% !important;
+}
 .section {
     text-align: center;
     background-color: rgba(42, 99, 99, 0)
@@ -119,24 +110,14 @@ h1, h2 {
 }
 /*---------*/
 
-/*table div*/
-/*.table {*/
-/*!*background-attachment: ;*!*/
-    /*background-repeat: no-repeat;*/
-    /*z-index: 100;*/
-    /*!*background-image: url("imgs/background/table.png");*!*/
-    /*!*background-size: 250px;*!*/
-/*}*/
-/*-------------------------*/
-
 
 /*first Page content adjust*/
-#first-container {
+#first-container, second-container {
     width: 100%;
     height: 95%;
 }
 
-#section1 h1 {
+#section1 h1, #section2 h1 {
     font-size: 1.6em;
     /*position: relative;*/
     padding: 0 4px;
@@ -168,8 +149,15 @@ h1, h2 {
     border-width: unset;
 }
 
-li {
-    margin: .2em
+/*second Page adjust*/
+#crosstitle {
+    width: 20em;
+}
+
+
+.slide li {
+    margin: .2em;
+    color: #fff;
 }
 
 .col {
@@ -196,13 +184,13 @@ li {
 }
 
 @media screen and (min-height: 550px) {
-    #first-container {
+    #first-container, second-container{
         height: 85%
     }
     #subtitle {
         height: 13em;
     }
-    #section1 h1 {
+    #section1 h1, #section2 h1 {
         line-height: 1.6em;
     }
     #section1 h2 {
@@ -211,7 +199,9 @@ li {
 }
 
 @media screen and (min-width: 576px) {
-
+    #crosstitle {
+        width: 35em;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -222,7 +212,7 @@ li {
     /*div.fp-tableCell {*/
         /*!*vertical-align: top;*!*/
     /*}*/
-    #first-container  {
+    #first-container, second-container  {
         vertical-align: top;
         height: 70%;
         width: 40em;
@@ -234,6 +224,11 @@ li {
         /*background-color: transparent;*/
         /*height: auto*/
     /*}*/
+
+    #crosstitle {
+        width: 40em;
+    }
+
     a.nav-link {
         margin: 0 4px !important;
     }
@@ -257,6 +252,17 @@ li {
     .fp-controlArrow {
         display: block
     }
+    #first-container, second-container  {
+        width: 1000px;
+    }
+    #section1 h1 {
+        font-size: 2.5em;
+    }
+    #section1 h2 {
+        font-size: 2em;
+        /*margin-bottom: 8em;*/
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
