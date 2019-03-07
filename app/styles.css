@@ -124,12 +124,7 @@ h1, h2 {
 /*black-strip*/
 .subtitle {
     background-color: #0c4c495c;
-    /*padding: 0 80000px;*/
-    /*margin: 0 -80000px;*/
-    /*z-index: -1;*/
-    /*height: 5em;*/
-    /*width: 8000px;*/
-    /*align-self: flex-start;*/
+    padding: 6px 0;
 }
 
 .btn-dark {
@@ -170,7 +165,12 @@ sndSlide {
 }
 
 .servelist {
-    width: 240px;
+    /*width: 240px;*/
+}
+
+.servelist ul {
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 .serveBack {
@@ -178,7 +178,7 @@ sndSlide {
     color: white
 }
 
-.slide li {
+.servelist ul {
     font-size: 0.8rem;
     margin: 0;
     color: #fff;
@@ -213,7 +213,8 @@ sndSlide {
         padding-bottom: 1rem;
     }
 
-    .slide li {
+    .servelist ul {
+        padding-left: 1.1rem;
         font-size: 1rem;
     }
 
@@ -222,7 +223,15 @@ sndSlide {
     }
 
     .servelist {
-        width: 18em;
+        width: 18rem;
+    }
+
+    @media screen and (min-height: 640px) {
+
+        /*second Page*/
+        .servelist li {
+            font-size: 1.1rem;
+        }
     }
 }
 
@@ -269,14 +278,17 @@ sndSlide {
         font-size: 1.3em;
     }
 
-    .slide li {
+    .servelist li {
         margin: .2em;
     }
 }
 
-@media screen and (min-width: 576px) {
-    #crosstitle {
-        /*width: 35em;*/
+@media screen and (min-width: 640px) {
+.servelist {
+    /*width: 20rem;*/
+}
+    .servelist li {
+        font-size: 1rem;
     }
 }
 
