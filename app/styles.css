@@ -79,7 +79,7 @@ a.nav-contacts, a.nav-btn-contacts, a.nav-link {
 
 a.nav-link {
     font-size: .8rem;
-    padding: .3rem 0;
+    padding: .2rem 0;
 }
 
 .nav-contacts { /*contact strip in menu*/
@@ -105,7 +105,6 @@ a.nav-link {
 /*Fullpage sections. setup background for navbar color changing*/
 .fp-tableCell {
     padding: 0 0;
-
     vertical-align: top;
     height: 100% !important;
 }
@@ -128,14 +127,21 @@ a.nav-link {
 /*FullPage controllers*/
 .fp-slidesNav {
     bottom: 0px !important;
-    z-index: 0;
+    height: 22px;
+}
+
+.fp-slidesNav span {
+    background: white !important;
 }
 
 /*-------------------------*/
 /*first Page content adjust*/
-#first-container, second-container {
+
+#first-container, #second-container, #third-container {
     width: 100%;
     height: 100%;
+    /*padding-top: 44px;*/
+
     /*height: 95%;*/
 }
 
@@ -150,14 +156,10 @@ a.nav-link {
 }
 
 /*black-strip*/
-.subtitle {
+.offerBack {
     background-color: #0c4c495c;
-    /*padding: 0 80000px;*/
-    /*margin: 0 -80000px;*/
-    /*z-index: -1;*/
-    /*height: 5em;*/
-    /*width: 8000px;*/
-    /*align-self: flex-start;*/
+    /*height: 5rem;*/
+    padding: 6px 0;
 }
 
 .btn-dark {
@@ -177,11 +179,11 @@ a.nav-link {
 }
 
 #section2 h1 {
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 #section2 h2 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 #crosstitle {
@@ -199,19 +201,26 @@ sndSlide {
 }
 
 .servelist {
-    width: 240px;
+    /*width: 240px;*/
 }
 
 .serveBack {
     background-color: #0c4c495c;
+    /*padding: 6px 0;*/
     color: white
 }
 
-.slide li {
+.servelist ul {
+    padding-left: 0;
+    margin-bottom: 0;
     font-size: 0.8rem;
     margin: 0;
     color: #fff;
     line-height: 1.4;
+}
+
+.servelist li {
+    line-height: 1.3;
 }
 
 .col {
@@ -249,7 +258,8 @@ sndSlide {
         padding-bottom: 1rem;
     }
 
-    .slide li {
+    .servelist ul {
+        padding-left: 1.1rem;
         font-size: 1rem;
     }
 
@@ -258,7 +268,43 @@ sndSlide {
     }
 
     .servelist {
-        width: 18em;
+        width: 18rem;
+    }
+
+    @media screen and (min-height: 640px) {
+        /*firstPage*/
+        .offerBack {
+            height: 10rem;
+        }
+        /*second Page*/
+        .servelist li {
+            font-size: 1.1rem;
+        }
+
+    }
+
+    @media screen and (min-height: 667px) {
+        #crosstitle {
+            padding: 3rem 0;
+        }
+    }
+
+    @media screen and (min-height: 736px) {
+        #crosstitle {
+            padding: 4rem 0;
+        }
+        #section2 h2 {
+            font-size: 1.4rem;
+        }
+        #section2 h1 {
+            font-size: 1.8rem;
+        }
+        .servelist li {
+            font-size: 1.3rem;
+        }
+        .servelist {
+            width: 20rem;
+        }
     }
 }
 
@@ -280,40 +326,72 @@ sndSlide {
     }
 }
 
-@media screen and (min-height: 550px) {
-    a.nav-link {
-        padding: .3em;
-    }
+/*@media screen and (min-height: 550px) {*/
+    /*a.nav-link {*/
+        /*padding: .3em;*/
+    /*}*/
 
-    #first-container, second-container {
-        height: 85%
-    }
+    /*#first-container, second-container {*/
+        /*height: 85%*/
+    /*}*/
 
-    .subtitle {
-        height: 13em;
-    }
+    /*.offerBack {*/
+        /*height: 13em;*/
+    /*}*/
 
-    #section1 h1, #section2 h1 {
-        line-height: 1.6em;
-    }
+    /*#section1 h1, #section2 h1 {*/
+        /*line-height: 1.6em;*/
+    /*}*/
 
-    #section1 h2 {
-        line-height: 1.5em;
-    }
+    /*#section1 h2 {*/
+        /*line-height: 1.5em;*/
+    /*}*/
 
+    /*#section2 h1 {*/
+        /*font-size: 1.3em;*/
+    /*}*/
+
+    /*.servelist li {*/
+        /*margin: .2em;*/
+    /*}*/
+/*}*/
+
+@media screen and (min-width: 640px) {
+    /*firstPage*/
+
+    /*secondPage*/
     #section2 h1 {
-        font-size: 1.3em;
+        font-size: 1.1rem;
     }
 
-    .slide li {
-        margin: .2em;
+    #section2 h2 {
+        font-size: 0.9rem;
     }
+    .servelist li {
+        line-height: 1.3;
+    }
+
 }
 
-@media screen and (min-width: 576px) {
-    #crosstitle {
-        /*width: 35em;*/
+@media screen and (min-width: 640px) {
+    /*firstPage*/
+    .offerBack {
+        height: 5rem;
     }
+    /*secondPage*/
+    .servelist {
+        width: 16rem;
+    }
+    .servelist li {
+        font-size: 1rem;
+    }
+    #section2 h1 {
+        font-size: 1.4rem;
+    }
+    #section2 h2 {
+        font-size: 1.1rem;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -322,22 +400,12 @@ sndSlide {
         display: none
     }
 
-    /*div.fp-tableCell {*/
-    /*!*vertical-align: top;*!*/
-    /*}*/
     #first-container, second-container {
-        vertical-align: top;
-        height: 70%;
-        width: 40em;
+        /*vertical-align: top;*/
+        /*height: 70%;*/
+        /*width: 40em;*/
     }
 
-    /*.subtitle h2 {*/
-    /*width: 40em !important;*/
-    /*}*/
-    /*.subtitle {*/
-    /*background-color: transparent;*/
-    /*height: auto*/
-    /*}*/
     #crosstitle {
         width: 40em;
     }
@@ -369,7 +437,7 @@ sndSlide {
     }
 
     #first-container, second-container {
-        width: 1000px;
+        /*width: 1000px;*/
     }
 
     #section1 h1 {

@@ -15,13 +15,14 @@ var myFullpage = new fullpage('#fullpage', {
 
     // design
     paddingTop: '2rem',
+
     controlArrows: true,
     // autoScrolling: false,
     // fitToSection: false,
     // navigationTooltips: ['First page', 'Second page', 'Third and last page']
     // Callbacks
 
-    afterLoad: function(origin, destination, direction) {
+    afterLoad: function (origin, destination, direction) {
         //change color
         // adjustNav($(destination.item).css('background-color'));
     },
@@ -64,9 +65,12 @@ function adjustNav(color) {
             $('.navbar').addClass(nav_add);
             // }, 700);
         // $('.navbar').addClass(nav_add);
-        $('.nav-contacts, .nav-btn-contacts, .nav-link').css({'filter': 'invert(' + invert + ')'});
-        $('.nav-contacts, .nav-btn-contacts, .nav-link').css({'-webkit-filter': 'invert(' + invert + ')'});
-        $('.nav-contacts, .nav-btn-contacts, .nav-link').css({'-ms-filter': 'invert(' + invert + ')'});
+        $('.nav-contacts, .nav-btn-contacts, .nav-link, .fp-slidesNav span').css({'filter': 'invert(' + invert + ')'});
+        $('.nav-contacts, .nav-btn-contacts, .nav-link, .fp-slidesNav span').css({'-webkit-filter': 'invert(' + invert + ')'});
+        $('.nav-contacts, .nav-btn-contacts, .nav-link, .fp-slidesNav span').css({'-ms-filter': 'invert(' + invert + ')'});
+        // $('.nav-contacts,.nav-btn-contacts, .fp-slidesNav span').css({'filter': 'invert(' + invert + ')'});
+        // $('.nav-contacts, .nav-btn-contacts, .fp-slidesNav span').css({'-webkit-filter': 'invert(' + invert + ')'});
+        // $('.nav-contacts, .nav-btn-contacts, .fp-slidesNav span').css({'-ms-filter': 'invert(' + invert + ')'});
     }
 
 }
@@ -82,6 +86,6 @@ function gallerySize() {
 };
 
 // enable menu after page load to avoid non stylized text
-$(window).on('load', function() {
+$(window).on('load', function () {
     $('.navbar').css({"visibility": "visible"});
 })
