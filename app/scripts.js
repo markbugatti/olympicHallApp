@@ -14,7 +14,7 @@ var myFullpage = new fullpage('#fullpage', {
     recordHistory: false,
 
     // design
-    paddingTop: '44px',
+    paddingTop: '2rem',
     controlArrows: true,
     // autoScrolling: false,
     // fitToSection: false,
@@ -48,11 +48,11 @@ function adjustNav(color) {
     switch (color.toString()) {
         case "rgb(42, 99, 99)":
             // light font color
-            adjustCss('navbar-light', 'navbar-dark', 1);
+            adjustCss('navbar-light', 'navbar-dark', 0);
             break;
         case "rgb(242, 242, 242)":
             // dark font color
-            adjustCss('navbar-dark', 'navbar-light', 0);
+            adjustCss('navbar-dark', 'navbar-light', 1);
             break;
         default:
             break;
@@ -64,9 +64,9 @@ function adjustNav(color) {
             $('.navbar').addClass(nav_add);
             // }, 700);
         // $('.navbar').addClass(nav_add);
-        $('.nav-contacts').css({'filter': 'invert(' + invert + ')'});
-        $('.nav-contacts').css({'-webkit-filter': 'invert(' + invert + ')'});
-        $('.nav-contacts').css({'-ms-filter': 'invert(' + invert + ')'});
+        $('.nav-contacts, .nav-btn-contacts, .nav-link').css({'filter': 'invert(' + invert + ')'});
+        $('.nav-contacts, .nav-btn-contacts, .nav-link').css({'-webkit-filter': 'invert(' + invert + ')'});
+        $('.nav-contacts, .nav-btn-contacts, .nav-link').css({'-ms-filter': 'invert(' + invert + ')'});
     }
 
 }
