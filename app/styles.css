@@ -23,6 +23,9 @@ body {
     -o-background-size: cover;
 }
 
+/*.fp-section {*/
+    /*padding-top: 44px;*/
+/*}*/
 /*-----------------*/
 
 /*setup font*/
@@ -49,20 +52,6 @@ a, span, .navbar { /*transition*/
     padding-bottom: 0;
 }
 
-.navbar-brand {
-    font-size: 1rem;
-}
-
-.navbar-toggler {
-    width: 2.2rem;
-    height: 1.7rem;
-    padding: 0;
-}
-
-.navbar-toggler-icon {
-    width: 1.3rem;
-    height: 1.3rem;
-}
 
 #nav-tel {
     background-image: url("imgs/icons/call32white.png");
@@ -163,7 +152,8 @@ a.nav-link {
 }
 
 .btn-dark {
-    font-size: 0.9rem;
+    /*font-size: 0.9rem;*/
+    font-size: 0.7rem;
     font-weight: 600;
     color: #44274d;
     background-color: #99ff99;
@@ -263,22 +253,59 @@ sndSlide {
         font-size: 1rem;
     }
 
-    .fp-tableCell {
-        vertical-align: center;
-    }
+    /*.fp-tableCell {*/
+        /*vertical-align: middle;*/
+    /*}*/
 
     .servelist {
         width: 18rem;
     }
 
+    /*before this size works mini menu in portrait*/
+    @media screen and (max-height: 480px){
+        /*.fp-section {*/
+            /*padding-top: 34px;*/
+        /*}*/
+        .navbar-brand {
+            font-size: 1rem;
+        }
+
+        .navbar-toggler {
+            width: 2.2rem;
+            height: 1.7rem;
+            padding: 0;
+        }
+
+        .navbar-toggler-icon {
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+    }
+    @media screen and (min-height: 430px){
+        .fp-tableCell {
+            vertical-align: middle;
+        }
+    }
     @media screen and (min-height: 640px) {
+        /*navbar*/
+        a.nav-link {
+            font-size: 1rem;
+        }
         /*firstPage*/
         .offerBack {
             height: 10rem;
         }
         /*second Page*/
+
         .servelist li {
             font-size: 1.1rem;
+            line-height: 1.7rem;
+        }
+        #section2 h2 {
+            font-size: 1.1rem;
+        }
+        #crosstitle {
+            padding: 16px 0;
         }
 
     }
@@ -319,6 +346,24 @@ sndSlide {
 /*font-size: .98em;*/
 /*}*/
 /*}*/
+
+/*before this size works mini menu in landscape*/
+@media screen and (max-height: 459px){
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        width: 2.2rem;
+        height: 1.7rem;
+        padding: 0;
+    }
+
+    .navbar-toggler-icon {
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+}
 
 @media screen and (min-width: 374px) {
     .nav-contacts {
