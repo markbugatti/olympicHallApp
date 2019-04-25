@@ -24,12 +24,12 @@ body {
 }
 
 /*.fp-section {*/
-    /*padding-top: 44px;*/
+/*padding-top: 44px;*/
 /*}*/
 /*-----------------*/
 
 /*setup font*/
-h1, h2, a.nav-link, a.nav-btn-contacts, a.nav-contacts{
+h1, h2, a.nav-link, a.nav-btn-contacts, a.nav-contacts {
     font-family: PlumbMedium;
 }
 
@@ -38,6 +38,7 @@ h1, h2 {
     margin: 0 0;
     padding: 0 0;
 }
+
 /*----------------------------*/
 
 
@@ -62,8 +63,13 @@ a, span, .navbar { /*transition*/
 }
 
 a.nav-contacts, a.nav-btn-contacts, a.nav-link {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     color: #ffffffb5 !important;
+}
+
+a.nav-btn-contacts {
+    color: rgba(255, 255, 255, .85) !important;
+    text-decoration: underline rgba(255, 255, 255, .6) !important;
 }
 
 a.nav-link {
@@ -73,12 +79,9 @@ a.nav-link {
 
 .nav-contacts { /*contact strip in menu*/
     display: none;
-    /*width: 1rem;*/
-    /*height: 1rem;*/
     background: no-repeat left center;
-    background-size: 1rem 1rem;
-
-    padding-left: 1.2rem;
+    background-size: 1.25rem 1.25rem;
+    padding-left: 1.3rem;
     text-indent: -88888px;
     width: 0;
 }
@@ -147,6 +150,7 @@ a.nav-link {
 /*black-strip*/
 .offerBack {
     background-color: #0c4c495c;
+    width: 100%;
     /*height: 5rem;*/
     padding: 6px 0;
 }
@@ -179,7 +183,7 @@ a.nav-link {
 #crosstitle {
     /*size: inherit;*/
     /*padding: 8px 0;*/
-    padding-bottom: 4px;
+    padding: 0.2rem;
 }
 
 sndSlide {
@@ -209,7 +213,7 @@ sndSlide {
     line-height: 1.4;
 }
 
-.servelist li {
+.servelist ul {
     line-height: 1.3;
 }
 
@@ -218,7 +222,7 @@ sndSlide {
     margin: 0 5px;
 }
 
-.container-row  {
+.container-row {
     margin-right: 0;
     margin-left: 0;
 }
@@ -240,6 +244,7 @@ sndSlide {
     #section2 h1 {
         font-size: 1.1rem;
     }
+
     #section2 h2 {
         font-size: 0.9rem;
     }
@@ -254,17 +259,16 @@ sndSlide {
     }
 
     /*.fp-tableCell {*/
-        /*vertical-align: middle;*/
+    /*vertical-align: middle;*/
     /*}*/
-
     .servelist {
         width: 18rem;
     }
 
     /*before this size works mini menu in portrait*/
-    @media screen and (max-height: 480px){
+    @media screen and (max-height: 480px) {
         /*.fp-section {*/
-            /*padding-top: 34px;*/
+        /*padding-top: 34px;*/
         /*}*/
         .navbar-brand {
             font-size: 1rem;
@@ -280,35 +284,60 @@ sndSlide {
             width: 1.3rem;
             height: 1.3rem;
         }
+
+        .nav-contacts { /*contact strip in menu*/
+            background-size: 1rem 1rem;
+        }
     }
-    @media screen and (min-height: 430px){
+
+    @media screen and (min-height: 430px) {
         .fp-tableCell {
             vertical-align: middle;
         }
+        #crosstitle {
+            padding: .8rem;
+        }
     }
+
+
     @media screen and (min-height: 640px) {
         /*navbar*/
         a.nav-link {
             font-size: 1rem;
+            line-height: 2rem;
         }
+
         /*firstPage*/
         .offerBack {
             height: 10rem;
         }
-        /*second Page*/
 
-        .servelist li {
-            font-size: 1.1rem;
-            line-height: 1.7rem;
+        #section1 h1 {
+            font-size: 1.2rem;
         }
+
         #section2 h2 {
             font-size: 1.1rem;
         }
+
+        /*second Page*/
+        .servelist ul {
+            font-size: 1rem;
+            line-height: 1.7rem;
+        }
+#section2 h1 {
+    font-size: 1.6rem;
+}
+        #section2 h2 {
+            font-size: 1.1rem;
+        }
+
         #crosstitle {
             padding: 16px 0;
         }
 
     }
+
 
     @media screen and (min-height: 667px) {
         #crosstitle {
@@ -316,39 +345,36 @@ sndSlide {
         }
     }
 
-    @media screen and (min-height: 736px) {
-        #crosstitle {
-            padding: 4rem 0;
-        }
-        #section2 h2 {
-            font-size: 1.4rem;
-        }
-        #section2 h1 {
-            font-size: 1.8rem;
-        }
-        .servelist li {
-            font-size: 1.3rem;
-        }
-        .servelist {
-            width: 20rem;
-        }
-    }
+    /*@media screen and (min-height: 736px) {*/
+    /*!*first page*!*/
+    /*#section1 h2 {*/
+    /*font-size: 1.4rem;*/
+    /*}*/
+    /*#section1 h1 {*/
+    /*font-size: 1.8rem;*/
+    /*}*/
+    /*!*second page*!*/
+    /*#crosstitle {*/
+    /*padding: 4rem 0;*/
+    /*}*/
+    /*#section2 h2 {*/
+    /*font-size: 1.4rem;*/
+    /*}*/
+    /*#section2 h1 {*/
+    /*font-size: 1.8rem;*/
+    /*}*/
+    /*.servelist ul {*/
+    /*font-size: 1.3rem;*/
+    /*}*/
+    /*.servelist {*/
+    /*width: 20rem;*/
+    /*}*/
+    /*}*/
 }
 
-/*@media all and (orientation:landscape) {*/
-/*!*second slide*!*/
-/*.fp-tableCell {*/
-/*!*vertical-align: top;*!*/
-/*}*/
-/*.servelist {*/
-/*width: 20em;*/
-/*padding: 0 .2em;*/
-/*font-size: .98em;*/
-/*}*/
-/*}*/
-
 /*before this size works mini menu in landscape*/
-@media screen and (max-height: 459px){
+@media screen and (max-height: 459px) {
+    /*navbar*/
     .navbar-brand {
         font-size: 1rem;
     }
@@ -363,80 +389,124 @@ sndSlide {
         width: 1.3rem;
         height: 1.3rem;
     }
+
+    a.nav-contacts {
+        font-size: 0.5rem;
+    }
 }
+
+@media screen and (min-height: 360px) {
+    /*general*/
+    .fp-tableCell {
+        vertical-align: middle;
+    }
+}
+
+
 
 @media screen and (min-width: 374px) {
     .nav-contacts {
         display: inline-block
     }
-}
-
-/*@media screen and (min-height: 550px) {*/
-    /*a.nav-link {*/
-        /*padding: .3em;*/
-    /*}*/
-
-    /*#first-container, second-container {*/
-        /*height: 85%*/
-    /*}*/
-
-    /*.offerBack {*/
-        /*height: 13em;*/
-    /*}*/
-
-    /*#section1 h1, #section2 h1 {*/
-        /*line-height: 1.6em;*/
-    /*}*/
-
-    /*#section1 h2 {*/
-        /*line-height: 1.5em;*/
-    /*}*/
-
-    /*#section2 h1 {*/
-        /*font-size: 1.3em;*/
-    /*}*/
-
-    /*.servelist li {*/
-        /*margin: .2em;*/
-    /*}*/
-/*}*/
-
-@media screen and (min-width: 640px) {
-    /*firstPage*/
-
-    /*secondPage*/
-    #section2 h1 {
-        font-size: 1.1rem;
-    }
-
-    #section2 h2 {
-        font-size: 0.9rem;
-    }
-    .servelist li {
-        line-height: 1.3;
-    }
 
 }
 
-@media screen and (min-width: 640px) {
-    /*firstPage*/
-    .offerBack {
-        height: 5rem;
+@media all and (orientation: landscape) {
+    @media screen and (min-height: 360px) {
+    #crosstitle {
+        width: 30rem;
     }
-    /*secondPage*/
-    .servelist {
-        width: 16rem;
-    }
-    .servelist li {
+        #section2 h1 {
+            font-size: 1.2rem;
+        }
+        #section2 h2 {
         font-size: 1rem;
     }
-    #section2 h1 {
-        font-size: 1.4rem;
+        .servelist ul {
+            font-size: 0.9rem;
+        }
     }
-    #section2 h2 {
-        font-size: 1.1rem;
+    @media screen and (min-height: 459px) {
+
+        /*second Page*/
+        /*#section2 h2 {*/
+        /*font-size: 1rem;*/
+        /*}*/
+
+        /*#section2 h1 {*/
+        /*font-size: 1.2rem;*/
+        /*}*/
+        /*.servelist ul {*/
+        /*font-size: 0.9rem;*/
+        /*}*/
+        #crosstitle {
+            padding: 3rem 0.5rem;
+        }
     }
 
+    @media screen and (min-height: 640px) {
+        /*firstPage*/
+        .offerBack {
+            height: 5rem;
+        }
+
+        /*secondPage*/
+        .servelist {
+            width: 16rem;
+        }
+
+        .servelist ul {
+            line-height: 1.3;
+            font-size: 1rem;
+        }
+
+        #section2 h1, #section1 h1 {
+            font-size: 1.4rem;
+        }
+
+        #section2 h2, #section1 h2 {
+            font-size: 1.1rem;
+        }
+
+        #maintitle {
+            width: 400px;
+        }
+
+        #crosstitle {
+            width: 500px
+        }
+    }
+    @media screen and (min-height: 736px) {
+        /*first page*/
+        #section1 h2 {
+            font-size: 1.4rem;
+        }
+
+        #section1 h1 {
+            font-size: 1.8rem;
+        }
+
+        /*second page*/
+        #crosstitle {
+            padding: 4rem 0;
+        }
+
+        #section2 h2 {
+            font-size: 1.4rem;
+        }
+
+        #section2 h1 {
+            font-size: 1.8rem;
+        }
+
+        .servelist ul {
+            font-size: 1.3rem;
+        }
+
+        .servelist {
+            width: 20rem;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -445,30 +515,13 @@ sndSlide {
         display: none
     }
 
-    #first-container, second-container {
-        /*vertical-align: top;*/
-        /*height: 70%;*/
-        /*width: 40em;*/
-    }
-
-    #crosstitle {
-        width: 40em;
+    #maintitle, #offer, #crosstitle {
+        width: 40rem;
     }
 
     a.nav-link {
         margin: 0 4px !important;
     }
-
-    /*fon size*/
-    #section1 h1 {
-        /*font-size: 2em;*/
-    }
-
-    #section1 h2 {
-        /*font-size: 2em;*/
-        /*margin-bottom: 8em;*/
-    }
-
 }
 
 @media screen and (min-width: 1090px) {
@@ -479,25 +532,5 @@ sndSlide {
 
     .fp-controlArrow {
         display: block
-    }
-
-    #first-container, second-container {
-        /*width: 1000px;*/
-    }
-
-    #section1 h1 {
-        font-size: 2.5em;
-    }
-
-    #section1 h2 {
-        font-size: 2em;
-        /*margin-bottom: 8em;*/
-    }
-
-}
-
-@media screen and (min-width: 1200px) {
-    h1 {
-        font-size: 2.5em
     }
 }
