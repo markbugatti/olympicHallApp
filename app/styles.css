@@ -157,6 +157,7 @@ a.nav-link {
 
 .btn-dark {
     /*font-size: 0.9rem;*/
+    width: 8rem;
     font-size: 0.7rem;
     font-weight: 600;
     color: #44274d;
